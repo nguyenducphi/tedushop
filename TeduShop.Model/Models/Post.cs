@@ -45,6 +45,6 @@ namespace TeduShop.Model.Models
         [ForeignKey("CategoryID")]
         public virtual PostCategory PostCategory { set; get; } // Tự động mapping quan hệ với cột ID trong bảng PostCategories khi render ra Database
 
-        //public virtual IEnumerable<PostTag> PostTags { set; get; }
+        public virtual IEnumerable<PostTag> PostTags { set; get; }
     }
 }
